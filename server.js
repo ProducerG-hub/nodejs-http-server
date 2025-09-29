@@ -1,7 +1,7 @@
 const http = require('http'); // the module that used for creating a SERVER locally without frame work
 
 const server = http.createServer((req,res)=>{
-    res.writeHead(200,{'content-type':'text/plain'});
+    res.writeHead(200,{'content-type':'text/plain'}); // the server response will be in plain text
     if(req.url === '/'){
         res.end('This is http server created by MLUE');
     }
