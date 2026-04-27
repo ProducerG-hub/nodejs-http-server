@@ -67,22 +67,6 @@ This repository demonstrates how to build a simple HTTP server using Node.js **w
 
 ---
 
-## Screenshots
- screenshot of the server response when visiting http://localhost:3000 in the browser
-![Server Response](https://i.imgur.com/screenshots/home-page.png)
-
-screenshot of the server response when visiting http://localhost:3000/mlue in the browser
-![MLUE Response](https://i.imgur.com/screenshots/mlue-page.png)
-
-screenshot of the server response when visiting http://localhost:3000/contact in the browser
-![Contact Response](https://i.imgur.com/screenshots/contact-page.png)
-
-screenshot of the server response when visiting an undefined route (e.g., http://localhost:3000/undefined) in the browser
-![404 Response](https://i.imgur.com/screenshots/404-page.png)
-
----
-
-
 ## How to Contribute
 
 1. Fork this repository
