@@ -1,70 +1,94 @@
 ```````````````
 markdown
-# Node.js HTTP Module Activities
-This repository contains all the practice activities I did while learning and exploring the **HTTP module** in Node.js.
+
+# Node.js HTTP Server Learning Project
+
+## Overview
+
+This repository demonstrates how to build a simple HTTP server using Node.js **without any external frameworks**. It covers the essentials of handling HTTP requests, routing, serving content, and managing status codes using only the built-in `http` module.
 
 ---
-````````````````````````
 
-##  What is inside?
+## Features
 
-The repository includes examples covering:
-
-- **Creating a simple HTTP server**
-  - Using `http.createServer` to handle requests and responses
-- **Routing basics**
-  - Handling different URLs (e.g., `/`, `/about`, `/contact`)
-- **Serving HTML content**
-  - Sending plain text, JSON, or HTML responses
-- **Handling status codes**
-  - Sending proper HTTP response codes (200, 404, etc.)
-- **Working with request and response objects**
-  - Using `req.url`, `req.method`, and `res.writeHead`
-- **Serving static files**
-  - Integrating `fs` module with `http` to serve files
-- **Basic server lifecycle**
-  - Starting a server and listening on a port (e.g., `localhost:3000`)
+-  Minimal and fast HTTP server (no dependencies)
+-  Handles multiple routes (`/`, `/mlue`, `/contact`)
+-  Returns plain text responses
+-  Custom status codes (200, 404)
+-  Clean and readable code for learning
 
 ---
-`````
-##  HOW TO USE THE CODES
+
+## Tech Stack
+
+- **Node.js** (native `http` module)
+- No frameworks (no Express, Koa, etc.)
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) installed (v12 or higher recommended)
+
+### Installation & Running
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/username/repository-name.git
-````
-````
-2. **Navigate into the project folder**
-
-   ```bash
-   cd repository-name
+   git clone https://github.com/ProducerG-hub/nodejs-http-server.git
+   cd nodejs-http-server
    ```
-
-3. **Run the example files using Node.js**
-
+2. **Run the server**
    ```bash
-   node filename.js
+   node server.js
    ```
-
-4. **Open in browser**
-
-   * Visit: `http://localhost:3000/` (or the port defined in the code)
+3. **Open your browser**
+   - Visit: [http://localhost:3000](http://localhost:3000)
 
 ---
 
-##  Purpose
+## Example Endpoints
 
-This repository is part of my **Node.js learning journey**, focusing mainly on how to build web servers and handle requests/responses using the built-in `http` module.
-
----
-
-##  Notes
-
-* These are **practice activities** meant for learning and experimentation.
-* No external frameworks (like Express.js) are used — only the **native HTTP module**.
+| Route         | Description                                 |
+|-------------- |---------------------------------------------|
+| `/`           | Welcome message                             |
+| `/mlue`       | Info about the team                         |
+| `/contact`    | Contact email                               |
+| any other     | 404 Not Found                               |
 
 ---
 
-**Author:** Producer G (Mlue Tech)
+## Project Structure
 
 ```
+├── server.js      # Main HTTP server code
+├── README.md      # Project documentation
+```
+
+---
+
+## How to Contribute
+
+1. Fork this repository
+2. Create your feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
+
+---
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE)
+
+---
+
+## Author & Contact
+
+**Gwamaka Mwakabuta (Mlue Technology)**  
+Email: mluetechnologytz@gmail.com
+
+---
+
+> _“Practice makes perfect. This project is for learning and experimentation with Node.js core modules.”_
